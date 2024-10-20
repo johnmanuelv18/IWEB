@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Shop</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div id="header-section" class="container">
+            <div class="logo">
+                <a href="FLOWERS_HOME.html">
+                    <img src="logo3.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="FLOWERS_HOME.html">Home</a></li>
+                    <li><a href="PRODUCTS.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a> <!-- Added search icon -->
+                <a href="profile.html"><i class="fa-regular fa-user"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>             
+        </div>
+    </header>
+
+    <body>
+
+   
+        <main>
+            <section class="cart-section">
+                <!-- Title Row for "Your Cart" -->
+                <div class="cart-title">
+                    <h1>Your Cart</h1>
+                </div>
+        
+                <!-- Cart Header Row -->
+                <div class="cart-header">
+                    <a href="products.html" class="continue-browsing"><i class="fa-solid fa-arrow-left"></i> Continue Browsing</a>
+                    <div class="cart-info-header">
+                        <span class="header-price">PRICE</span>
+                        <span class="header-quantity">QUANTITY</span>
+                        <span class="header-total">TOTAL</span>
+                    </div>
+                </div>
+        
+                <!-- Cart Items Container -->
+                <div class="cart-container">
+                    <!-- First Item -->
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <img src="p1.jpeg" alt="Happy Birthday Cake Topper">
+                            <div class="item-info">
+                                <h2>Happy Birthday Cake Topper</h2>
+                                <button class="remove-btn">Remove</button>
+                            </div>
+                        </div>
+                        <div class="item-price">$77.49</div>
+                        <div class="item-quantity">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" value="1" class="quantity-input" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>                
+                        <div class="item-total">$77.49</div>
+                    </div>
+        
+                    <!-- Second Item -->
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <img src="p2.jpeg" alt="Uji Matcha Tart">
+                            <div class="item-info">
+                                <h2>Uji Matcha Tart</h2>
+                                <p>Candle/Knife: Standard</p>
+                                <button class="remove-btn">Remove</button>
+                            </div>
+                        </div>
+                        <div class="item-price">$90.76</div>
+                        <div class="item-quantity">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" value="1" class="quantity-input" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        
+                        <div class="item-total">$90.76</div>
+                    </div>
+        
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <img src="p3.jpeg" alt="Uji Matcha Tart">
+                            <div class="item-info">
+                                <h2>Uji Matcha Tart</h2>
+                                <p>Candle/Knife: Standard</p>
+                                <button class="remove-btn">Remove</button>
+                            </div>
+                        </div>
+                        <div class="item-price">$109.76</div>
+                        <div class="item-quantity">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" value="1" class="quantity-input" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        
+                        <div class="item-total">$109.76</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <img src="p4.jpeg" alt="Uji Matcha Tart">
+                            <div class="item-info">
+                                <h2>Uji Matcha Tart</h2>
+                                <p>Candle/Knife: Standard</p>
+                                <button class="remove-btn">Remove</button>
+                            </div>
+                        </div>
+                        <div class="item-price">$120.66</div>
+                        <div class="item-quantity">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" value="1" class="quantity-input" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        
+                        <div class="item-total">$120.66</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Subtotal Section -->
+        <div class="subtotal-container">
+            <span class="subtotal-text">SUBTOTAL:</span>
+            <span class="subtotal-amount">$560.66</span>
+        </div>
+        
+        <p class="delivery-info">Delivery calculated at checkout</p>
+        
+        <!-- Checkout Button -->
+        <div class="checkout-btn-container">
+            <a href="log_cookies.html" class="checkout-btn">CHECK OUT</a>
+        </div>
+        
+        <script src="checkout.js"></script>
+
+        
+        <script>
+            document.querySelectorAll('.plus').forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.previousElementSibling;
+                    input.value = parseInt(input.value) + 1;
+                });
+            });
+        
+            document.querySelectorAll('.minus').forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.nextElementSibling;
+                    if (parseInt(input.value) > 1) {
+                        input.value = parseInt(input.value) - 1;
+                    }
+                });
+            });
+        // Your JavaScript code from earlier
+            document.addEventListener('DOMContentLoaded', function() {
+                const minusBtn = document.querySelector('.qty-minus');
+                const plusBtn = document.querySelector('.qty-plus');
+                const qtyInput = document.getElementById('quantity-input');
+                const addToCartBtn = document.querySelector('.add-to-cart-btn');
+            
+            // Decrease the value
+            minusBtn.addEventListener('click', function() {
+                let currentValue = parseInt(qtyInput.value);
+                if (currentValue > 1) {
+                    qtyInput.value = currentValue - 1;
+                }
+            });
+
+            // Increase the value
+            plusBtn.addEventListener('click', function() {
+                let currentValue = parseInt(qtyInput.value);
+                qtyInput.value = currentValue + 1;
+            });
+
+            // Add to Cart function
+            addToCartBtn.addEventListener('click', function() {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                
+                // Create a product object
+                const product = {
+                    name: "Fur Elise",
+                    price: 35.99,
+                    quantity: parseInt(qtyInput.value),
+                    image: "pro1.jpeg"
+                };
+
+                // Check if the item is already in the cart
+                const existingProduct = cart.find(item => item.name === product.name);
+                if (existingProduct) {
+                    existingProduct.quantity += product.quantity;
+                } else {
+                    cart.push(product);
+                }
+
+                // Save the updated cart to localStorage
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                // Redirect to the cart page
+                window.location.href = "cart.html";
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartContainer = document.querySelector('.cart-container');
+            const subtotalElement = document.querySelector('.subtotal-amount');
+        
+            // Get cart from localStorage
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let subtotal = 0;
+        
+            // Iterate over the cart and display the items
+            cart.forEach(item => {
+                const totalPrice = item.price * item.quantity;
+                subtotal += totalPrice;
+        
+                const cartItem = `
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <img src="${item.image}" alt="${item.name}">
+                            <div class="item-info">
+                                <h2>${item.name}</h2>
+                                <button class="remove-btn" data-name="${item.name}">Remove</button>
+                            </div>
+                        </div>
+                        <div class="item-price">$${item.price.toFixed(2)}</div>
+                        <div class="item-quantity">
+                            <button class="qty-btn minus" data-name="${item.name}">-</button>
+                            <input type="text" value="${item.quantity}" class="quantity-input" readonly>
+                            <button class="qty-btn plus" data-name="${item.name}">+</button>
+                        </div>                
+                        <div class="item-total">$${totalPrice.toFixed(2)}</div>
+                    </div>
+                `;
+                cartContainer.insertAdjacentHTML('beforeend', cartItem);
+            });
+        
+            // Update subtotal
+            subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
+        
+            // Event listeners for remove and quantity update buttons
+            document.querySelectorAll('.remove-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemName = this.getAttribute('data-name');
+                    cart = cart.filter(item => item.name !== itemName);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    window.location.reload();
+                });
+            });
+        
+            document.querySelectorAll('.plus').forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemName = this.getAttribute('data-name');
+                    const item = cart.find(item => item.name === itemName);
+                    item.quantity += 1;
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    window.location.reload();
+                });
+            });
+        
+            document.querySelectorAll('.minus').forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemName = this.getAttribute('data-name');
+                    const item = cart.find(item => item.name === itemName);
+                    if (item.quantity > 1) {
+                        item.quantity -= 1;
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                        window.location.reload();
+                    }
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartContainer = document.querySelector('.cart-container');
+            const subtotalElement = document.querySelector('.subtotal-amount');
+        
+            function updateCart() {
+                // Clear existing cart items
+                cartContainer.innerHTML = '';
+        
+                // Get cart from localStorage
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                let subtotal = 0;
+        
+                // Iterate over the cart and display the items
+                cart.forEach(item => {
+                    const totalPrice = item.price * item.quantity;
+                    subtotal += totalPrice;
+        
+                    const cartItem = `
+                        <div class="cart-item" data-name="${item.name}">
+                            <div class="item-details">
+                                <img src="${item.image}" alt="${item.name}">
+                                <div class="item-info">
+                                    <h2>${item.name}</h2>
+                                    <button class="remove-btn" data-name="${item.name}">Remove</button>
+                                </div>
+                            </div>
+                            <div class="item-price">$${item.price.toFixed(2)}</div>
+                            <div class="item-quantity">
+                                <button class="qty-btn minus" data-name="${item.name}">-</button>
+                                <input type="text" value="${item.quantity}" class="quantity-input" readonly>
+                                <button class="qty-btn plus" data-name="${item.name}">+</button>
+                            </div>                
+                            <div class="item-total">$${totalPrice.toFixed(2)}</div>
+                        </div>
+                    `;
+                    cartContainer.insertAdjacentHTML('beforeend', cartItem);
+                });
+        
+                // Update subtotal
+                subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
+        
+                // Add event listeners to new buttons
+                addEventListeners();
+            }
+        
+            function addEventListeners() {
+                // Event listener for remove buttons
+                document.querySelectorAll('.remove-btn').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const itemName = this.getAttribute('data-name');
+                        removeItem(itemName);
+                    });
+                });
+        
+                // Event listeners for quantity buttons
+                document.querySelectorAll('.plus').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const itemName = this.getAttribute('data-name');
+                        updateQuantity(itemName, 1);
+                    });
+                });
+        
+                document.querySelectorAll('.minus').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const itemName = this.getAttribute('data-name');
+                        updateQuantity(itemName, -1);
+                    });
+                });
+            }
+        
+            function removeItem(itemName) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart = cart.filter(item => item.name !== itemName);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCart();
+            }
+        
+            function updateQuantity(itemName, change) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const item = cart.find(item => item.name === itemName);
+                if (item) {
+                    item.quantity = Math.max(1, item.quantity + change);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCart();
+                }
+            }
+        
+            // Initial cart update
+            updateCart();
+        });
+        
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+        </script>
+        </body>
+        
+        <footer>
+            <div class="footer-container">
+                <!-- Section 1: Brand Info -->
+                <div class="footer-section brand-info">
+                    <h3>The Blooms Nature Intended</h3>
+                    <p>At Flori Flower Shop, we believe in the pure beauty of nature. That's why our arrangements are crafted using only the freshest.</p>
+                </div>
+        
+                <!-- Section 2: Product Links -->
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="tulips.html">Birthdays</a></li>
+                        <li><a href="wed.html">Weddings</a></li>
+                        <li><a href="holy.html">Holidays</a></li>
+                        <li><a href="congratulations.html">Congratulations</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Section 3: Company Links -->
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="contact.html#faq-section">FAQS</a></li>
+                        <li><a href="contact.html#email-forms">Email Forms</a></li>
+                        <li><a href="contact.html#customer-support">Customer Support</a></li>
+                        <li><a href="About.html">Our Story</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Section 4: Blog Links -->
+                <div class="footer-section">
+                    <h3>Blog</h3>
+                    <ul>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="track.html">Track through Number</a></li>
+                        <li><a href="order.html">Track through Order</a></li>
+                        <li><a href="profile.html">Manage Profiles</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Section 5: Contact Information -->
+                <div class="footer-section">
+                    <h3>Connect with us</h3>
+                    <p>Email: info@flori.com</p>
+                    <p>Contact: +63 998 166 7570</p>
+                    <p>Main: 108 Aguirre Ave. BF Homes, Angeles City, Pampanga</p>
+                    <p>Cebu: Unit 25 The Rivergate Bldg., Los Angeles, CA</p>
+                    <div class="social-icons">
+                        <a href="https://www.plantshed.com/sweet-season"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.plantshed.com/sweet-season"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.plantshed.com/sweet-season"><i class="fab fa-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        </html>
+        
