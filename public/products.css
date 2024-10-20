@@ -1,0 +1,419 @@
+.hero-banner {
+    background-image: url('ber.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 120px 20px;
+    color: #6a222f; /* Updated text color to match theme */
+    height: 400px; /* Adjust as needed */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%; /* Adjust the top position */
+    left: 71%; /* Move the text to the right */
+    transform: translate(-50%, -50%);
+    text-align: right;
+    width: 45%;
+    max-width: 70%; /* Set a max width for the text */
+}
+
+.hero-banner .hero-text h1 {
+    font-family: "Sofia", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: #F05C7A;
+    font-size: 50px; /* Increase the font size to fit one line */
+    margin-bottom: 20px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent the text from breaking into multiple lines */
+}
+
+.hero-banner .hero-text p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 30px; /* Increase margin to create space between text and button */
+    color: #6a222f; /* Updated text color to match theme */
+}
+
+.cta-btn {
+    background-color: #F05C7A; /* Updated to match theme */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #b83e2d; /* Darker shade on hover */
+}
+
+.trending-gifts {
+    padding: 40px 20px;
+    text-align: center;
+    color: #6a222f; /* Updated text color to match theme */
+}
+
+.trending-gifts h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #6a222f; /* Updated text color to match theme */
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the start to allow independent height growth */
+}
+
+/* Left Nav Styling */
+.left-nav {
+    width: 20%;
+    background-color: #f7eeee; /* Updated background color to match theme */
+    border-right: 2px solid #ebb8c2;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh; /* Full height of the viewport */
+    position: sticky; /* Keeps it in place as you scroll */
+    top: 0;
+    color: #6a222f; /* Updated text color to match theme */
+}
+
+.content-area {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1; /* Ensures content area takes up remaining space */
+    color: #6a222f; /* Updated text color to match theme */
+}
+
+.left-nav h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #6a222f; /* Updated text color to match theme */
+}
+
+.left-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove bullet points */
+
+}
+
+.left-nav ul li {
+    margin-bottom: 15px;
+}
+
+.left-nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #6a222f; /* Updated text color to match theme */
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ebb8c2;
+}
+
+.left-nav ul li a:hover {
+    background-color: #F05C7A; /* Updated hover background color to match theme */
+    color: #fff;
+}
+
+.left-nav ul li.active a {
+    background-color: #F05C7A; /* Active background color */
+    color: #fff; /* Active text color */
+}
+
+
+
+
+
+/* Existing styles */
+.filter-sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter, .sort {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: #F05C7A;
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #6a222f;
+}
+
+/* Updated dropdown content styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0;
+    top: 30px;
+    left: 0;
+}
+
+/* New styles for dropdown links */
+.dropdown-content a {
+    color: #6a222f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #F05C7A;
+    color: white;
+}
+
+/* Keep the dropdown open when hovering */
+.filter:hover .dropdown-content,
+.sort:hover .dropdown-content {
+    display: block;
+}
+
+/* Existing responsive styles */
+@media screen and (max-width: 767px) {
+    .filter-sort-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter, .sort {
+        margin-bottom: 10px;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        position: static;
+        box-shadow: none;
+        border: 1px solid #ebb8c2;
+    }
+}
+
+
+
+
+
+
+/* Product Grid Styling */
+.product-grid {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 18px; /* Thin gap between the products */
+    margin-top: 20px; /* Add margin to create space between rows */
+}
+
+.gift-item {
+    width: 32%; /* Slightly increase width to fit all 3 products in the grid */
+    text-align: center;
+    position: relative; /* Position relative for the badge */
+}
+
+.gift-item img {
+    width: 100%;
+    border-radius: 10px; /* Border radius added to images */
+    margin-bottom: 10px;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #F05C7A; /* Updated badge color to match theme */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sale-text {
+    color: #F05C7A; /* Updated sale text color to match theme */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.gift-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #6a222f; /* Updated text color to match theme */
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6a222f; /* Updated text color to match theme */
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+
+.rating {
+    font-size: 14px;
+    color: #F05C7A; /* Updated rating color to match theme */
+    margin-top: 10px;
+}
+
+.product-grid + .product-grid {
+    margin-top: 30px; /* Increase the space between the first and second row */
+}
+
+.product-grid a {
+    text-decoration: none; /* Remove underline */
+    color: #6a222f; /* Updated link color to match theme */
+}
+
+.product-grid h3 a {
+    font-weight: bold;
+    color: #6a222f; /* Updated link color to match theme */
+}
+
+.product-grid a:hover {
+    color: #F05C7A; /* Updated hover color to match theme */
+}
+
+
+
+
+
+/* Existing CSS remains the same */
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+    .hero-text {
+        left: 50%;
+        text-align: center;
+        width: 80%;
+        max-width: 100%;
+    }
+
+    .hero-banner .hero-text h1 {
+        font-size: 40px;
+        white-space: normal;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-nav {
+        width: 100%;
+        min-height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 2px solid #ebb8c2;
+        margin-bottom: 20px;
+    }
+
+    .content-area {
+        width: 100%;
+    }
+
+    .product-grid {
+        justify-content: space-between;
+    }
+
+    .gift-item {
+        width: 48%;
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+    .hero-banner {
+        height: 300px;
+        padding: 60px 20px;
+    }
+
+    .hero-text {
+        width: 90%;
+    }
+
+    .hero-banner .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-banner .hero-text p {
+        font-size: 16px;
+    }
+
+    .filter-sort-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter, .sort {
+        margin-bottom: 10px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .gift-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Additional styles for better responsiveness */
+@media screen and (max-width: 480px) {
+    #header-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+}
+
+/* Footer responsiveness */
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-section {
+        width: 100%;
+    }
+}

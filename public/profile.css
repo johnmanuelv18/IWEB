@@ -1,0 +1,105 @@
+/* Container for the login form */
+.login-container {
+    max-width: 400px;
+    margin: 60px auto 25px; 
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    color: #6a222f; /* Darker text color */
+}
+
+/* Title of the login form */
+.login-title {
+    font-family: "Arial", serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #b84e63; /* Black/dark text */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    margin-top: .5em;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c13f59; /* Dark border */
+    border-radius: 4px;
+    font-size: 1em;
+    color: #6a222f; /* Dark text */
+    background-color: #fff; /* White background for input */
+}
+
+/* Placeholder text styling */
+.login-form input::placeholder {
+    color: #888; /* Lighter gray placeholder */
+    opacity: 1;
+}
+
+/* Input focus state styling */
+.login-form input:focus {
+    outline: none;
+    border-color: #666; /* Slightly darker border color on focus */
+}
+
+/* Forgot password link */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    font-size: 0.8em;
+    color: #6a222f; /* Dark text color */
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Login button styling */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #c13f59; /* Burgundy background */
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #95243b; /* Darker burgundy on hover */
+}
+
+.login-form button:active {
+    background-color: #95243b; /* Darkest burgundy on active */
+}
+
+
+/* Sign up link */
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link p {
+    color: #6a222f; /* Dark text color */
+}
+
+.signup-link a {
+    color: #c13f59; /* Burgundy link */
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
